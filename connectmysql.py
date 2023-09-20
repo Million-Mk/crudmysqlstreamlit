@@ -4,11 +4,21 @@ import pymysql
 
 
 def connectdb():
+    # # local
+    # connection = pymysql.connect(
+    #     host='localhost',
+    #     user='root',
+    #     password='',
+    #     db='pythondb',
+    #     port=3306,
+    #     cursorclass=pymysql.cursors.DictCursor)
+    # return connection
+
     connection = pymysql.connect(
-        host='localhost',
-        user='root',
-        password='',
-        db='pythondb',
+        host='baos8wlctwnopyxpcphs-mysql.services.clever-cloud.com',
+        user='uxknmercewdinymf',
+        password='CbrcoKfho8zL1tbGQL4u',
+        db='baos8wlctwnopyxpcphs',
         port=3306,
         cursorclass=pymysql.cursors.DictCursor)
     return connection
